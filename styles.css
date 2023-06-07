@@ -1,0 +1,172 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .btn-contacto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e6b7c9;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn-contacto:hover {
+    background-color: #d49fb3;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+ /* .proyecto {
+    margin-bottom: 40px;
+  }
+  
+  .proyecto img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .proyecto h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .proyecto p {
+    color: #666;
+  }*/
+
+
+
+  .proyectos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .proyecto {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    background-color: #f7e8ed;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .proyecto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .proyecto h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .proyecto p {
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .proyectos-container {
+      justify-content: flex-start;
+    }
+  
+    .proyecto {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #e6b7c9;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #d49fb3;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+  }
+  

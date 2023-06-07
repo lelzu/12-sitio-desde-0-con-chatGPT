@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <div class="container">
+            <h1>Bienvenido a mi Portfolio</h1>
+            <p>Soy Laura, una programadora con varios años de experiencia en programación web full stack.</p>
+            <a href="#contacto" class="btn-contacto">Contáctame</a>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Descripción breve sobre ti y tu experiencia. Destaca tus habilidades y logros relevantes.</p>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="proyectos-container">
+                <div class="proyecto">
+                    <img src="imagenes/proyecto1.png" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit netus et, 
+                        est metus accumsan lobortis ad augue sem nostra, sapien eleifend quam dignissim bibendum leo turpis risus. 
+                    </p>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/proyecto2.png" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p> Nam cubilia vivamus dictumst duis eu vel urna, mollis cras convallis phasellus nulla libero, 
+                        ultrices netus auctor aliquam sociosqu vulputate. 
+                    </p>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/proyecto3.png" alt="Proyecto 2">
+                    <h3>Proyecto 3</h3>
+                    <p>Vitae velit nullam cursus non mollis mauris magnis dapibus penatibus, 
+                        cubilia aptent accumsan augue sodales facilisis condimentum dui ridiculus erat, 
+                        dictum rhoncus cum ut ante per litora torquent.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                <textarea id="message" name="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="submit" onclick="validateForm()">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 ChatGPT design. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    
+</body>
+
+</html>
